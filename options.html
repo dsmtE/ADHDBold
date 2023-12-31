@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADHD Bold Options</title>
+    </head>
+    <body>
+        <select id="selector" multiple>
+            <option value="p">Paragraphs</option>
+            <option value="span">Spans</option>
+            <option value="div">Divs</option>
+            <option value="li">List items</option>
+            <option value="dd">Definition items</option>
+            <option value="dt">Definition terms</option>
+        </select>
+
+        <select id="fontWeight">
+            <option value="700">Bold</option>
+            <option value="600">Semi-bold</option>
+            <option value="500">Medium</option>
+            <option value="400">Normal</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="firstLetter" />
+            Bold only first letter
+        </label>
+
+        <div id="status"></div>
+        <button id="save">Save</button>
+
+        <script src="options.js"></script>
+    </body>
+</html>

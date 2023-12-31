@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "ADHDBold",
+    "author": "desmet.enguerrand@gmail.com",
+    "version": "1.0.0",
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "content_scripts": [
+        {
+            "matches": [ "http://*/*", "https://*/*", "file:///*"],
+            "css": [ "styles.css" ],
+            "js": [ "script.js" ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
